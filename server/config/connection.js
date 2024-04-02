@@ -1,6 +1,6 @@
 require("dotenv").config();
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://txtony9:SHOPit@cluster5.wnepgcz.mongodb.net/');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/mernshopping');
 
 module.exports = mongoose.connection;
